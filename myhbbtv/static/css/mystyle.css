@@ -1,0 +1,64 @@
+.background {
+  left: 0px;
+  top: 0px;
+  width: 1280px;
+  height: 720px;
+  position:absolute;
+  background-color: #F7E9E9;
+  border:1px solid #c33;
+  z-index:-1;
+  opacity: 0.2;
+}
+
+.safearea {
+  left: 128px;
+  top: 36px;
+  width: 1024px;
+  height: 648px;
+  position:absolute;
+  z-index:1;
+  opacity: 1;
+}
+#video_broadcast,#broadcast {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 1280px;
+  height: 720px;
+  z-index: 0;
+}
+
+#video_broadband,#broadband {
+  position: absolute;
+  left: 100px;
+  top: 100px;
+  width: 320px;
+  height: 180px;
+  z-index: 1;
+}
+
+#hideMe {
+    -moz-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Firefox */
+    -webkit-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Safari and Chrome */
+    -o-animation: cssAnimation 0s ease-in 5s forwards;
+    /* Opera */
+    animation: cssAnimation 0s ease-in 5s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+@keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
+}
+@-webkit-keyframes cssAnimation {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+    }
+}
